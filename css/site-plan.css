@@ -1,22 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Jost&family=Playfair+Display&display=swap');
 
 :root{
-    --primary-color: #396E94;
-    --secondary-color: #E7C24F;
-    --accent1-color: #A43312;
-    --accent2-color: white;
-    --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, Helvetica, sans-serif
+    --primary-color: #197BBD;
+    --secondary-color: #C2B8B2;
+    --accent1-color: #EFEDE8;
+    --accent2-color: #125E8A;
+    --accent3-color: #204B57;
+    --heading-font: "Playfair Display";
+    --paragraph-font: "Jost"
 }
 
 html{
-    background-color: var(--primary-color)
+    background-color: var(--accent2-color)
 }
 
 body{
     max-width: 900px;
     margin: 0 auto;
-    background-color: white;
+    background-color: var(--accent1-color);
     padding: 1em
 }
 
@@ -26,23 +27,23 @@ img{
 
 h1, h2, h3, h4, h5, h6{
     font-family: var(--heading-font);
-    color: purple;
+    color: var(--primary-color);
 }
 
 header{
     padding: 1em;
     text-align: center;
     color: var(--accent2-color);
-    background-color: purple;
+    background-color: var(--secondary-color);
 }
 
 header > h1{
-    color: purple;
+    color: var(--accent3-color);
 }
 
 p{
     font-family: var(--paragraph-font);
-    color:purple;
+    color: var(--accent2-color);
     padding: 1em
 }
 
@@ -58,7 +59,7 @@ p{
 }
 
 .colors td{
-    width: 25%;
+    width: 20%;
     height: 3em
 }
 
@@ -78,8 +79,12 @@ p{
     background-color: var(--accent2-color)
 }
 
+.accent3 {
+    background-color: var(--accent3-color)
+}
+
 nav{
-    background-color: purple;
+    background-color: var(--secondary-color);
     line-height: 3em;
     text-align: center;
     font-size: 1.2em
@@ -96,10 +101,15 @@ nav a{
 }
 
 nav a:link, nav a:visited{
-    color: purple;
+    color: var(--primary-color);
 }
 
 nav a:hover{
-    color: purple;
-    background-color: purple;
+    color: var(--accent1-color);
+    background-color: var(--accent3-color);
+}
+
+.colored {
+    background-color: var(--secondary-color);
+    color: var(--primary-color)
 }
