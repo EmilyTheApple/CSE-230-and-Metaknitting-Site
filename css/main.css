@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Shadows+Into+Light&display=swap');
+
+:root{
+    --primary-color: #363537;
+    --secondary-color: #4F3130;
+    --accent1-color: #CA2E55;
+    --accent2-color: #FFE0B5;
+    --accent3-color: #FEFEFF;
+    --heading-font: "Shadows Into Light";
+    --paragraph-font: "Patrick Hand"
+}
+
+html{
+    background-color: var(--accent1-color)
+}
+
+body {
+    background-color: var(--accent2-color);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 1em;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+main {
+    padding: 1em;
+    min-height: 78vh;
+}
+
+ul {
+    font-family: var(--paragraph-font);
+    font-size: larger;
+}
+
+footer {
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    padding: 1em;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
