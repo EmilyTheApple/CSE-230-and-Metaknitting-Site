@@ -74,4 +74,5 @@ nav a:hover{
 
 footer {
     background-color: var(--secondary-color);
+    padding: 20px;
 }
