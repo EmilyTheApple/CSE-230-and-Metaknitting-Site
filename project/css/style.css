@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Jost&family=Playfair+Display&display=swap');
+
+:root{
+    --primary-color: #197BBD;
+    --secondary-color: #C2B8B2;
+    --accent1-color: #EFEDE8;
+    --accent2-color: #125E8A;
+    --accent3-color: #204B57;
+    --heading-font: "Playfair Display";
+    --paragraph-font: "Jost"
+}
+
+html{
+    background-color: var(--accent2-color)
+}
+
+body{
+    background-color: var(--accent1-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header{
+    padding: 1em;
+    text-align: center;
+    color: var(--accent2-color);
+    background-color: var(--secondary-color);
+}
+
+header > h1{
+    color: var(--accent3-color);
+}
+
+p{
+    font-family: var(--paragraph-font);
+    color: var(--accent2-color);
+    padding: 1em
+}
+
+nav{
+    background-color: var(--secondary-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em
+}
+
+nav > ul{
+    list-style-type: none;
+    display: flex
+}
+
+nav a{
+    padding:1em;
+    min-width: 70px
+}
+
+nav a:link, nav a:visited{
+    color: var(--primary-color);
+}
+
+nav a:hover{
+    color: var(--accent1-color);
+    background-color: var(--accent3-color);
+}
+
