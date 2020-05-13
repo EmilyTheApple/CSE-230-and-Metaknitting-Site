@@ -24,6 +24,11 @@ h1, h2, h3, h4, h5, h6{
     color: var(--primary-color);
 }
 
+header, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 header{
     padding: 1em;
     text-align: center;
@@ -66,4 +71,3 @@ nav a:hover{
     color: var(--accent1-color);
     background-color: var(--accent3-color);
 }
-
