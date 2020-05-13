@@ -40,10 +40,7 @@ header > h1{
     color: var(--accent3-color);
 }
 
-.logo {
-    width: 50px;
-    height: auto;
-}
+
 
 p{
     font-family: var(--paragraph-font);
