@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Shadows+Into+Light&display=swap');
 
 :root{
-    --primary-color: #363537;
-    --secondary-color: #4F3130;
-    --accent1-color: #CA2E55;
-    --accent2-color: #FFE0B5;
-    --accent3-color: #FEFEFF;
+    --primary-color: #44001A;
+    --secondary-color: #600047;
+    --accent1-color: #770058;
+    --accent2-color: #FFFFFF;
+    --accent3-color: #FCE5FA;
     --heading-font: "Shadows Into Light";
     --paragraph-font: "Patrick Hand"
 }
 
 html{
-    background-color: var(--accent1-color)
+    background-image: url(https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg);
+    background-repeat: round;
 }
 
 body {
