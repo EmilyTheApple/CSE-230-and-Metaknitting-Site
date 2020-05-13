@@ -17,6 +17,9 @@ html{
 body{
     background-color: var(--accent1-color);
     font-size: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -29,8 +32,7 @@ header, main, footer {
     margin: 0 auto;
 }
 
-header{
-    padding: 1em;
+header {
     text-align: center;
     color: var(--accent2-color);
     background-color: var(--secondary-color);
@@ -38,6 +40,10 @@ header{
 
 header > h1{
     color: var(--accent3-color);
+}
+
+.logo {
+    width: 100px;
 }
 
 p{
@@ -55,7 +61,8 @@ nav{
 
 nav > ul{
     list-style-type: none;
-    display: flex
+    display: flex;
+    padding: 0;
 }
 
 nav a{
@@ -70,6 +77,19 @@ nav a:link, nav a:visited{
 nav a:hover{
     color: var(--accent1-color);
     background-color: var(--accent3-color);
+}
+
+.active {
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+}
+
+.active:hover {
+    background-color: var(--primary-color);
+}
+
+.hero {
+    max-width: 900px;
 }
 
 footer {
