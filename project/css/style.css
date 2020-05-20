@@ -6,8 +6,6 @@
     --accent1-color: #EFEDE8;
     --accent2-color: #125E8A;
     --accent3-color: #204B57;
-    --heading-font: "Playfair Display";
-    --paragraph-font: "Jost"
 }
 
 html{
@@ -20,11 +18,11 @@ body{
     font-size: 16px;
     max-width: 900px;
     margin: 0 auto;
-    box-shadow: 0 0 30px var(--accent2-color);
+    box-shadow: 0 0 50px var(--accent2-color);
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: var(--heading-font);
+    font-family: "Playfair Display", "Garamond", serif;
     color: var(--primary-color);
 }
 
@@ -55,7 +53,7 @@ header > h1{
 }
 
 p{
-    font-family: var(--paragraph-font);
+    font-family: "Jost", "Century Gothic", sans-serif;
     color: var(--accent2-color);
     padding: 1em
 }
@@ -102,6 +100,15 @@ nav a:hover{
 
 main {
     margin: 0 1.2em;
+}
+
+.contact {
+     
+}
+
+.contact img {
+    width: 20px;
+    height: auto;
 }
 
 footer {
