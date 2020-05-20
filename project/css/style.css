@@ -103,7 +103,7 @@ main {
 }
 
 .contact {
-     
+     line-height: 1.5rem;
 }
 
 .contact img {
@@ -111,7 +111,27 @@ main {
     height: auto;
 }
 
+.address2, .address3 {
+    position: relative;
+    left: 25px;
+}
+
 footer {
     background-color: var(--secondary-color);
     padding: 20px;
+    display: flex;
+}
+
+.social {
+    position: relative;
+    left: 200px;
+}
+
+.social img {
+    padding: 5px;
+}
+
+.copyright {
+    background-color: var(--secondary-color);
+    padding: 0 20px 10px 20px;
 }
