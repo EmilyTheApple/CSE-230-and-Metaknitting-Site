@@ -106,6 +106,10 @@ main {
     float: right;
 }
 
+.reception {
+    float: left;
+}
+
 .contact {
      line-height: 1.5rem;
 }
