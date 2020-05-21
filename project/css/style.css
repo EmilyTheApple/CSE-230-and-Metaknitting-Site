@@ -102,6 +102,10 @@ main {
     margin: 0 1.2em;
 }
 
+.bed {
+    float: right;
+}
+
 .contact {
      line-height: 1.5rem;
 }
