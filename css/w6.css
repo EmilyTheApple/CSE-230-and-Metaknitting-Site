@@ -1,8 +1,9 @@
 body {
     font-size: 16px;
     background-color: #fff;
-    margin: 30px;
+    margin: auto;
     font-family: 'Courier New', Courier, monospace;
+    max-width: 960;
   }
   
   /* Activity 1 styles */
