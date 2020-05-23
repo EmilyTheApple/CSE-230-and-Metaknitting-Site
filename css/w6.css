@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 10px;
   }
   
   .red1 {
@@ -24,14 +24,14 @@ body {
   .green1 {
     width: 200px;
     height: 200px;
-    margin: 0 10px;
+    margin: 0 20px;
     background-color: green;
   }
   
   .gold1 {
     width: 200px;
     height: 200px;
-    margin: 0 10px;
+    margin: 0 20px;
     background-color: gold;
   }
   
