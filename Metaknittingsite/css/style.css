@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #a4130f;
+    --secondary-color: #453c3d;
+    --accent1-color: #d1cdcc;
+    --accent2-color: #f2f0ff;
+    --accent3-color: #fffefe;
+}
+
+html {
+    background-color: var('--accent2-color');
+}
+
+body {
+    background-color: var('--accent1-color');
+    margin: 0 auto;
+    max-width: 960px;
+}
