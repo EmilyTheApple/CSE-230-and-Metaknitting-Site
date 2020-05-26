@@ -2,12 +2,11 @@
     --primary-color: #a4130f;
     --secondary-color: #453c3d;
     --accent1-color: #d1cdcc;
-    --accent2-color: #D8D4F2;
-    --accent3-color: #FEFEEE;
+    --accent2-color:#FEFEEE;
 }
 
 html {
-    background-color: #D8D4F2;
+    background-color: #453c3d;
 }
 
 body {
@@ -21,4 +20,5 @@ header {
     width: 200px;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
 }
