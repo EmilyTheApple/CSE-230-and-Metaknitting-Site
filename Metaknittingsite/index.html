@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/gallerymodal.js"></script>
     <title>Metaknitting | Homepage</title>
 </head>
+
 <body>
     <Header>
         <h1>Metaknitting</h1>
-        <img src="images/Metaknittinglogo.png" alt="The Metaknitting Logo">
+        <img src="images/MetaknittinglogoFEFEEE.png" alt="The Metaknitting Logo">
         <nav>
             <ul>
                 <li><a class="active" href="index.html">Home</a></li>
@@ -19,16 +22,24 @@
             </ul>
         </nav>
     </Header>
-    <main>
-        <img src="images/babycatearhat.jpg" alt="baby cat ear hat">
-        <img src="images/babyfishadultfish.jpg" alt="baby and adult fish hats">
-        <img src="images/babyfishhat.jpg" alt="baby fish hat">
-        <img src="images/beardedhat.jpg" alt="bearded hat">
-        <img src="images/bluefishhat.jpg" alt="blue fish hat">
-        <img src="images/feuxearflaphat.jpg" alt="feux earflap hat">
-        <img src="images/orangefishhat.JPG" alt="orange fish hat">
-        <img src="images/pinkfishhat.jpg" alt="pink fish hat">
-    </main>
+    <div class="leftmain">
+        <img id="view1" src="images/babycatearhat.jpg" alt="baby cat ear hat">
+        <img id="view2" src="images/babyfishadultfish.jpg" alt="baby and adult fish hats">
+        <img id="view3" src="images/babyfishhat.jpg" alt="baby fish hat">
+        <img id="view4" src="images/beardedhat.jpg" alt="bearded hat">
+    </div>
+    <div class="rightmain">
+        <img id="view5" src="images/bluefishhat.jpg" alt="blue fish hat">
+        <img id="view6" src="images/feuxearflaphat.jpg" alt="feux earflap hat">
+        <img id="view7" src="images/orangefishhat.JPG" alt="orange fish hat">
+        <img id="view8" src="images/pinkfishhat.jpg" alt="pink fish hat">
+    </div>
+    <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
     <footer>&copy;Metaknitting | Emily Patrick | 2020</footer>
 </body>
+
 </html>
