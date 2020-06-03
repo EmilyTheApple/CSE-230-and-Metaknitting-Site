@@ -16,7 +16,7 @@ html{
 body{
     background-color: var(--accent1-color);
     font-size: 16px;
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto;
     box-shadow: 0 0 50px var(--accent2-color);
 }
@@ -85,19 +85,21 @@ nav a:hover{
     background-color: var(--primary-color);
 }
 
+.hero-box {
+    position: relative;
+}
+
 .hero {
-    max-width: 900px;
-    margin-bottom: 20px;
+    max-width: 960px;
 }
 
 .action {
-    position: relative;
-    top: -180px;
-    left:  50px;
+    position: absolute;
     background-color: rgba(239, 237, 232, 0.685);
     width: 245px;
-    height: 115px;
     padding: 5px 0 0 10px;
+    top: 40px;
+    left: 35px;
 }
 
 .action h3 {
@@ -110,24 +112,30 @@ nav a:hover{
     width: 10em;
     line-height: 1.5em;
     margin-left: 20px;
+    margin-bottom: 20px;
     background-color: var(--accent1-color);
     color: var(--accent3-color)
 }
 
+hr {
+    display: none;
+}
+
 main {
-    margin: 0 1.2em;
+    margin: 1.2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
 
 h2 {
-    margin-left: 15px;
+    text-align: center;
 }
 
 .wedding {
     grid-column: 2/3;
     grid-row: 2/3;
+    margin-left: 1rem;
 }
 
 .familysearch {
@@ -177,19 +185,57 @@ footer {
 .copyright {
     background-color: var(--secondary-color);
     padding: 0 20px 10px 20px;
+    text-align: center;
 }
 
 @media screen and (max-width: 550px) {
-    .hero {
-        width: 530px;
+    header {
+        display: block;
+    }
+
+    picture, h1 {
+        display: inline;
     }
     
+    picture {
+        display: 
+        margin-left: 20px;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    .hero {
+        max-width: 550px;
+    }
+    
+    .action {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        padding: 0 145px;
+    }
+
+    hr {
+        display: block;
+        width: 80vw;
+        color: var(--accent3-color);
+    }
+
     main {
       display: block;
     }
 
     footer {
         display: block;
+        position: relative;
     }
 
+    .social {
+        position: absolute;
+        top: 60px;
+        right: 0;
+    }
   }
