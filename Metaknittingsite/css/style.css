@@ -14,7 +14,26 @@ html {
 body {
     background-color: #FEFEEE;
     margin: 0 auto;
-    max-width: 920px;
+    max-width: 960px;
+}
+
+nav {
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 960px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+}
+
+nav ul a {
+    padding: 10px;
+}
+
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 240px 1fr;
     grid-template-rows: 300px 1fr;

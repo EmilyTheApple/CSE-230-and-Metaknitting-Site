@@ -1,0 +1,8 @@
+.wireframes {
+    display: flex;
+}
+
+.wireframes img {
+    max-width: 400px;
+    margin-right: 40px;
+}
