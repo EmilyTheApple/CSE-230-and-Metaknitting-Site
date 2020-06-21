@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Open+Sans&display=swap');
+
+:root {
+    --primary-color: #a4130f;
+    --secondary-color: #453c3d;
+    --accent1-color: #d1cdcc;
+    --accent2-color: #f2f0ff;
+    --accent3-color:#FEFEEE;
+}
+
+html {
+    background-color: #453c3d;
+}
+
+body {
+    background-color: #FEFEEE;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+}
+
+nav ul a {
+    padding: 10px;
+}
