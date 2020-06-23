@@ -127,8 +127,57 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
+
 h2 {
     text-align: center;
+}
+
+.templemain {
+    padding: 10px;
+}
+
+.templeimg {
+    max-width: 500px;
+    display: block;
+    margin: 10px auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+.amenitiesmain {
+    margin: 1.2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.amenitiesimg {
+    width: 250px;
+    grid-column: 2/3;
+    border: 1px solid #204B57;
+    box-shadow: 5px 5px 5px #204B57;
+    padding: 5px;
+}
+
+.amenities ul, .services ul {
+    color: var(--accent3-color);
+    font-family: "Jost", "Century Gothic", sans-serif;
+}
+
+.amenities {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.services {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.amenities ul li {
+    padding-bottom: 25px;
 }
 
 .wedding {
@@ -164,6 +213,33 @@ h2 {
 .address2, .address3 {
     position: relative;
     left: 25px;
+}
+
+.switchtemples {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.last, .next {
+    width: 150px;
+    background-color: var(--accent2-color);
+    padding: 5px;
+    text-decoration: none;
+}
+
+.lasttext, .nexttext {
+    color: var(--accent1-color);
+    display: inline;
+}
+
+.last:hover, .next:hover {
+    background-color: var(--primary-color);
+}
+
+.tinyimg {
+    width: 50px;
+    vertical-align: middle;
 }
 
 footer {
