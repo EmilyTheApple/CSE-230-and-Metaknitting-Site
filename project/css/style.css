@@ -128,12 +128,76 @@ main {
     grid-gap: 20px;
 }
 
+.reservationmain {
+    width: 600px;
+    background-color: var(--accent2-color);
+    padding: 0 10px;
+    margin: 0 auto 5px auto;
+    border: 1px solid var(--accent3-color);
+    border-radius: 5px;
+}
+
+fieldset {
+    margin: 10px 10px 20px 10px;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    font-family: "Jost", "Century Gothic", sans-serif;
+}
+
+.form {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+label {
+    padding: 1rem 1rem 1rem 0;
+}
+
+input {
+    padding: .5rem;
+    margin: .5rem 0;
+    box-sizing: border-box;
+    border: 2px solid var(--accent3-color);
+    border-radius: 5px;
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
+    width: 50%;
+    font-family: "Jost", "Century Gothic", sans-serif;
+    font-size: large;
+}
+
+input:focus {
+    border: 3px solid var(--primary-color);
+}
+
+button {
+    background-color: var(--accent1-color);
+    border: 2px solid var(--accent3-color);
+    color: var(--primary-color);
+    padding: .75rem 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Jost", "Century Gothic", sans-serif;
+    font-size: large;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
 h2 {
     text-align: center;
 }
 
 .templemain {
     padding: 10px;
+}
+
+.templemain p {
+    background-color: var(--secondary-color);
 }
 
 .templeimg {
@@ -246,6 +310,7 @@ footer {
     background-color: var(--secondary-color);
     padding: 20px;
     display: flex;
+    font-family: "Jost", "Century Gothic", sans-serif;
 }
 
 .social {
@@ -261,6 +326,7 @@ footer {
     background-color: var(--secondary-color);
     padding: 0 20px 10px 20px;
     text-align: center;
+    font-family: "Jost", "Century Gothic", sans-serif;
 }
 
 @media screen and (max-width: 550px) {
