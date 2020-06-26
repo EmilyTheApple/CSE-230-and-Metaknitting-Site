@@ -13,8 +13,7 @@ html {
 }
 
 body {
-    margin: 0 auto;
-    width: 1080px;
+    margin: 0;
     font-size: 16px;
     font-family: "Open Sans", helvetica, sans-serif;
     color: var(--secondary-color);
@@ -62,6 +61,8 @@ nav ul a:hover {
 
 main {
     padding: 10px;
+    width: 1080px;
+    margin: 0 auto;
 }
 
 .colors  {
