@@ -1,32 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Open+Sans&display=swap');
 
 :root {
-    --primary-color: #a4130f;
-    --secondary-color: #453c3d;
-    --accent1-color: #d1cdcc;
-    --accent2-color: #f2f0ff;
-    --accent3-color:#FEFEEE;
+    --primary-color: #9b581c;
+    --secondary-color: #631f18;
+    --accent1-color: #33032f;
+    --accent2-color: #beb5b1;
+    --accent3-color:#ede8e9;
 }
 
 html {
-    background-color: #453c3d;
+    background-color: var(--accent2-color);
 }
 
 body {
-    background-color: #FEFEEE;
     margin: 0 auto;
+    width: 1080px;
+    font-size: 16px;
+    font-family: "Open Sans", helvetica, sans-serif;
+    color: var(--secondary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Advent Pro", Helvetica, sans-serif;
+    margin: 10px 0;
+}
+
+header {
+    background: var(--primary-color);
+    padding: 10px;
+}
+
+h1 {
+    color: var(--accent1-color);
+    margin: 0;
+}
+
+.signature {
+    color: var(--accent1-color);
 }
 
 nav {
     background-color: var(--primary-color);
+    padding: 1px;
 }
 
 nav ul {
     list-style-type: none;
-    text-decoration: none;
     display: flex;
 }
 
 nav ul a {
+    color: var(--accent3-color);
+    padding: 20px 10px;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+}
+
+main {
     padding: 10px;
+}
+
+.colors  {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    text-align: center
+}
+
+.colors th{
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+.colors td{
+    width: 20%;
+    height: 3em
+}
+
+.primary, .secondary, .accent1 {
+    color: var(--accent3-color);
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+.accent3 {
+    background-color: var(--accent3-color);
+}
+
+.wireframes {
+    width: 200px;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
+    padding-left: 10px;
 }
