@@ -62,3 +62,8 @@ a:hover {
     color: var(--accent1-color);
     text-decoration: underline;
 }
+
+.layout {
+    max-width: 900px;
+    display: inline;
+}
