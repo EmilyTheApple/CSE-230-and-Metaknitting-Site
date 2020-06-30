@@ -1,134 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Open+Sans&display=swap');
 
 :root {
-    --primary-color: #a4130f;
-    --secondary-color: #453c3d;
-    --accent1-color: #d1cdcc;
-    --accent2-color:#FEFEEE;
+    --primary-color: #9b581c;
+    --secondary-color: #631f18;
+    --accent1-color: #33032f;
+    --accent2-color: #beb5b1;
+    --accent3-color:#ede8e9;
 }
 
 html {
-    background-color: #453c3d;
+    background-color: var(--accent2-color);
 }
 
 body {
-    background-color: #FEFEEE;
-    margin: 0 auto;
-    max-width: 960px;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Open Sans", helvetica, sans-serif;
+    color: var(--secondary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Advent Pro", Helvetica, sans-serif;
+}
+
+header {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: var(--accent1-color);
+    margin: 10px;
+}
+
+.searchbar {
+    margin: 10px;
+}
+
+input {
+    background-color: var(--accent2-color);
+    height: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--secondary-color)
+}
+
+.material-icons {
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+}
+
+button {
+    background-color: var(--secondary-color);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--secondary-color);
 }
 
 nav {
     background-color: var(--primary-color);
-    position: fixed;
-    width: 960px;
+    padding: 1px;
+    display: inline;
 }
 
 nav ul {
     list-style-type: none;
-    text-decoration: none;
     display: flex;
+    margin: 26px 10px 0 10px;;
 }
 
 nav ul a {
+    color: var(--accent3-color);
     padding: 10px;
+    text-decoration: none;
+    border-radius: 3px 3px 0 0;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 240px 1fr;
-    grid-template-rows: 300px 1fr;
-    grid-gap: 20px;
-    padding: 0 20px;
+nav ul a:hover {
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
 }
 
-header {
-    background-color: #a4130f;
-    width: 200px;;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    grid-column: 2/3;
-    grid-row: 1/2;
+.active {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color)
 }
 
-header h1 {
-    margin: 10px auto;
-    color: #FEFEEE;
-    font-family: 'Advent Pro', Helvetica, sans-serif;
-}
-
-header img {
-    width: 100px;
+main {
+    padding: 10px;
+    width: 1080px;
     margin: 0 auto;
 }
 
-.leftmain {
-    grid-column: 1/2;
-    grid-row: 1/3;
-}
-
-.rightmain {
-    grid-column: 3/4;
-    grid-row: 1/3;
-}
-
-#view1, #view2, #view3, #view4, #view5, #view6, #view7, #view8 {
-    width: 320px;
-    height: auto;
-    margin: 10px 0;
-    opacity: 0.8;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#view1:hover, #view2:hover, #view3:hover, #view4:hover, #view5:hover, #view6:hover, #view7:hover, #view8:hover {
-    box-shadow: 5px 5px 10px #453c3d;
-    opacity: 1.0;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9)
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-#caption {
-    margin: auto;
-    display: block; 
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #d1cdcc;
+footer {
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
     padding: 10px;
-    height: 150px;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #FEFEEE;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-close:hover, .close:focus {
-    color: #d1cdcc;
-    text-decoration: none;
-    cursor: pointer;
 }
