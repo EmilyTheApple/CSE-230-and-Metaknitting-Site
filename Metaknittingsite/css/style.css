@@ -46,6 +46,11 @@ input {
     border-style: solid;
     border-color: var(--secondary-color);
     padding: 10px 2px;
+    transition: width 2s ease;
+}
+
+input:focus {
+    width: 300px;
 }
 
 .material-icons {
