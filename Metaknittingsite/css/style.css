@@ -92,7 +92,7 @@ nav ul a:hover {
 
 main {
     width: 1080px;
-    margin: 0 auto 10px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px 10px;
@@ -122,25 +122,51 @@ section {
     grid-column: 2/4;
 }
 
-.about h3 {
-    margin-top: 40px;
+.about h2 {
+    margin: 10px auto;
 }
 
-.about a {
+.questions h2 {
+    margin-top: 0;
+}
+
+.questions {
+    grid-column: 1/-1;
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+@keyframes wiggle{
+    0% { transform: rotate(0deg);}
+    50% { transform: rotate(0deg);}
+    70% { transform: rotate(5deg);}
+    80% { transform: rotate(-5deg);}
+    90% { transform: rotate(5deg);}
+    100% { transform: rotate(0deg);}
+}
+
+.wiggle {
     text-decoration: none;
     color: var(--accent3-color);
     display: block;
     text-align: center;
     margin-top: 30px;
+    animation: wiggle 2.5s infinite;
 }
 
-.about a:hover {
-    color: var(--primary-color);
+.wiggle:hover {
+    color: var(--accent1-color);
+    animation: none;
 }
 
 .product {
     max-width: 350px;
     box-shadow: 5px 5px 5px var(--secondary-color);
+    transition: transform .2s;
+}
+
+.product:hover {
+    transform: scale(1.2);
 }
 
 main>h2 {
