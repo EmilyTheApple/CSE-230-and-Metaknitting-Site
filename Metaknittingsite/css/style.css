@@ -95,7 +95,7 @@ main {
     margin: 0 auto 10px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 30px 10px;
 }
 
 .hero {
@@ -138,13 +138,6 @@ section {
     color: var(--primary-color);
 }
 
-hr {
-    grid-column: 1/-1;
-    border-style: solid;
-    border-color: var(--primary-color);
-    border-width: medium;
-}
-
 .product {
     max-width: 350px;
     box-shadow: 5px 5px 5px var(--secondary-color);
@@ -153,6 +146,14 @@ hr {
 main>h2 {
     grid-column: 1/-1;
     color: var(--secondary-color);
+}
+
+main>a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    grid-column: 3/-1;
+    display: block;
+    text-align: right;
 }
 
 footer {
