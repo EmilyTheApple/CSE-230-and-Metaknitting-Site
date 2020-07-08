@@ -166,12 +166,21 @@ section {
 
 .product {
     max-width: 350px;
-    box-shadow: 5px 5px 5px var(--secondary-color);
+    box-shadow: 5px 5px 5px #794416;
     transition: transform .2s;
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+    border: 1px solid var(--secondary-color);
 }
 
 .product:hover {
-    transform: scale(1.2);
+    transform: scale(1.02);
+    box-shadow: none;
+}
+
+.product p {
+    margin: 15px;
+    text-align: center;
 }
 
 main>h2 {
@@ -185,6 +194,31 @@ main>a {
     grid-column: 3/-1;
     display: block;
     text-align: right;
+}
+
+.pattern:nth-of-type(odd) {
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
+}
+
+.pattern:nth-of-type(even) {
+    background-color: var(--accent2-color);
+}
+
+.pattern {
+    grid-column: 1/-1;
+}
+
+.pattern img {
+    max-width: 325px;
+    margin: 10px;
+}
+
+.pattern a {
+    float: left;
+}
+
+.pattern p {
 }
 
 footer {
