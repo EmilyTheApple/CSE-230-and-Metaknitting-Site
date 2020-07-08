@@ -163,6 +163,7 @@ section {
 .wiggle:hover {
     color: var(--accent1-color);
     transform: scale(1.2);
+    animation: none;
 }
 
 .product {
