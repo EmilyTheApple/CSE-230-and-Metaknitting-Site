@@ -157,12 +157,12 @@ section {
     text-align: center;
     margin-top: 30px;
     animation: wiggle 2.5s infinite;
-    transition: transform .2s;
+    /*transition: transform .2s;*/
 }
 
 .wiggle:hover {
     color: var(--accent1-color);
-    transform: scale(1.2);
+   /* transform: scale(1.2); */
     animation: none;
 }
 
