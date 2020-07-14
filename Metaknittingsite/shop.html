@@ -8,14 +8,14 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Metaknitting | Homepage</title>
+    <title>Metaknitting | Shop</title>
 </head>
 
 <body>
     <header>
         <h1>Metaknitting</h1>
         <div class="searchbar">
-            <input type="text" placeholder="Search..">
+            <input class="headersearch" type="text" placeholder="Search..">
             <button><i class="material-icons">search</i></button></div>
         <nav>
             <ul>
@@ -35,8 +35,21 @@
         </div>
         <div class="narrow">
             <h2>Narrow your search</h2>
-            <form action="post">
-
+            <form class="narrowform" action="post">
+                <input type="checkbox" id="hats" name="producttype" value="hats">
+                <label for="hats">Hats</label><br>
+                <input type="checkbox" id="scarves" name="producttype" value="scarves">
+                <label for="scarves">Scarves</label><br>
+                <input type="checkbox" id="gloves" name="producttype" value="gloves">
+                <label for="gloves">Gloves</label><br>
+                <input type="checkbox" id="other" name="producttype" value="other">
+                <label for="other">Other Accessories</label><br>
+                <input type="checkbox" id="kids" name="producttype" value="kids">
+                <label for="kids">Kids</label><br>
+                <input type="checkbox" id="costumes" name="producttype" value="costumes">
+                <label for="costumes">Costumes</label><br>
+                <input type="checkbox" id="charity" name="producttype" value="charity">
+                <label for="charity">Charity</label><br>
             </form>
         </div>
         <div class="productbox">
@@ -82,6 +95,9 @@
                     <p>Ponytail Hat</p>
                 </div>
             </div>
+        </div>
+        <div class="customizelink">
+            <img src="images/Customizegraphic.png" alt="Make a custom order">
         </div>
     </main>
     <footer>&copy;Metaknitting | Emily Patrick | 2020</footer>

@@ -47,11 +47,6 @@ input {
     border-color: var(--secondary-color);
     background-color: var(--accent3-color);
     padding: 10px 2px;
-    transition: width 2s ease;
-}
-
-input:focus {
-    width: 300px;
 }
 
 .material-icons {
@@ -161,12 +156,10 @@ main {
     text-align: center;
     margin-top: 30px;
     animation: wiggle 2.5s infinite;
-    /*transition: transform .2s;*/
 }
 
 .wiggle:hover {
     color: var(--accent1-color);
-   /* transform: scale(1.2); */
     animation: none;
 }
 
@@ -242,13 +235,16 @@ main {
 
 .shopmain {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 1fr 1fr 1fr;
+    grid-template-columns: 300px 1fr 1fr;
+    grid-template-rows: 120px 1fr 1fr 1fr;
+    margin-bottom: 20px;
 }
 
 .shopsearch {
     grid-column: 1/-1;
     grid-row: 1/2;
+    width: 800px;
+    margin: 40px auto;
 }
 
 .shopsearch input {
@@ -257,7 +253,9 @@ main {
 
 .narrow {
     grid-column: 1/2;
-    grid-row: 2/4;
+    grid-row: 2/-2;
+    border: 2px solid var(--secondary-color);
+    border-right: none;
 }
 
 .productbox {
@@ -266,12 +264,22 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+    border: 2px solid var(--secondary-color);
+    padding: 5px 0;
 }
 
 .productresults {
     width: 200px;
     border: 1px solid var(--accent1-color);
     justify-self: center;
+    margin-top: 20px;
+    background-color: var(--accent3-color);
+    transition: scale;
+}
+
+.productresults:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .productresults img {
@@ -281,6 +289,20 @@ main {
 .productresults p {
     text-align: center;
     margin: 5px;
+}
+
+.narrowform {
+    margin: 0 38px;
+}
+.narrowform input {
+    margin-bottom: 15px;
+}
+
+.customizelink {
+    border-left: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    overflow: hidden;
+    height: 300px;
 }
 
 footer {
