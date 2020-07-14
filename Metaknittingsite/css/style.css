@@ -274,6 +274,7 @@ main {
     justify-self: center;
     margin-top: 20px;
     background-color: var(--accent3-color);
+    box-shadow: 3px 3px 5px var(--accent1-color);
     transition: scale;
 }
 
@@ -303,6 +304,51 @@ main {
     border-bottom: 2px solid var(--secondary-color);
     overflow: hidden;
     height: 300px;
+}
+
+#sendmessage {
+    width: 50%;
+    margin: 50px auto;
+}
+
+#sendmessage fieldset {
+    border-radius: 5px;
+    color: var(--accent1-color);
+}
+
+#sendmessage legend {
+    padding: 0 5px;
+}
+
+.form {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+.form li {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+}
+
+.form li label {
+    padding: 15px;
+}
+
+.form li input {
+    width: 200px;
+    margin: 10px;
+    color: var(--accent1-color);
+}
+
+textarea {
+    margin: 10px;
+    background-color: var(--accent3-color);
+    border-color: var(--secondary-color);
+}
+
+.submit {
+    grid-column: 2/-1;
+    width: 200px;
 }
 
 footer {

@@ -27,12 +27,28 @@
         </nav>
     </header>
     <main class="contactmain">
-
-        <form>
-
-            
+        <form action="post" id="sendmessage">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <ul class="form">
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </li>
+                    <li>
+                        <label for="message">Message:</label>
+                        <textarea rows="6" cols="30" name="message" form="sendmessage"></textarea>
+                    </li>
+                    <li>
+                        <input class="submit" type="submit" value="Submit">
+                    </li>
+                </ul>
+            </fieldset>
         </form>
-
     </main>
     <footer>&copy;Metaknitting | Emily Patrick | 2020</footer>
 </body>
