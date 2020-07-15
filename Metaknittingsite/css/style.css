@@ -306,9 +306,18 @@ main {
     height: 300px;
 }
 
+.moreinfo {
+    margin: 30px auto;
+    width: 75%;
+}
+
+.moreinfo h2 {
+    margin-bottom: 30px;
+}
+
 #sendmessage {
     width: 50%;
-    margin: 50px auto;
+    margin: 50px auto 60px auto;
 }
 
 #sendmessage fieldset {
@@ -327,7 +336,7 @@ main {
 
 .form li {
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 80px 1fr;
 }
 
 .form li label {
