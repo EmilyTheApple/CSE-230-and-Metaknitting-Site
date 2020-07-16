@@ -34,12 +34,10 @@ header {
 h1 {
     color: var(--accent1-color);
     margin: 10px;
-
 }
 
 .searchbar {
     margin: 10px;
-    padding-left: 140px;
     display: grid;
     grid-template-columns: 205px 1fr;
 }
@@ -75,7 +73,8 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    margin: 29px 10px 0 10px;;
+    margin: 29px 10px 0 10px;
+    padding: 0;
 }
 
 nav ul a {
@@ -174,6 +173,7 @@ main {
     background-color: var(--secondary-color);
     color: var(--accent3-color);
     border: 1px solid var(--secondary-color);
+    text-decoration: none;
 }
 
 .product:hover {
@@ -191,7 +191,7 @@ main {
     color: var(--secondary-color);
 }
 
-.home>a {
+.more {
     text-decoration: none;
     color: var(--secondary-color);
     grid-column: 3/-1;
