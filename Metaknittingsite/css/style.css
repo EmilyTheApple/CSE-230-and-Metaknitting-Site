@@ -34,10 +34,14 @@ header {
 h1 {
     color: var(--accent1-color);
     margin: 10px;
+
 }
 
 .searchbar {
     margin: 10px;
+    padding-left: 140px;
+    display: grid;
+    grid-template-columns: 205px 1fr;
 }
 
 input {
