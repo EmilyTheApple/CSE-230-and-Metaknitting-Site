@@ -13,17 +13,19 @@ html {
 }
 
 body {
-    margin: 0;
-    font-size: 16px;
-    font-family: "Open Sans", helvetica, sans-serif;
     color: var(--secondary-color);
+    font-family: "Open Sans", helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Advent Pro", Helvetica, sans-serif;
-    text-align: center;
     letter-spacing: 2px;
+    text-align: center;
 }
+
+/* Header Styles */
 
 header {
     background: var(--primary-color);
@@ -31,57 +33,24 @@ header {
     justify-content: space-between;
 }
 
-h1 {
-    color: var(--accent1-color);
-    margin: 10px 80px 10px 10px;
-}
-
-.searchbar {
-    margin: 10px;
-    display: grid;
-    grid-template-columns: 205px 1fr;
-}
-
-input {
-    background-color: var(--accent2-color);
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--secondary-color);
-    background-color: var(--accent3-color);
-    padding: 10px 2px;
-}
-
-.material-icons {
-    background-color: var(--secondary-color);
-    color: var(--accent3-color);
-}
-
-button {
-    background-color: var(--secondary-color);
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--secondary-color);
-    padding: 1px 5px 10px 5px;
-}
-
 nav {
     background-color: var(--primary-color);
-    padding: 1px;
     display: inline;
+    padding: 1px;
 }
 
 nav ul {
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
     margin: 29px 10px 0 10px;
     padding: 0;
 }
 
 nav ul a {
+    border-radius: 3px 3px 0 0;
     color: var(--accent3-color);
     padding: 10px;
     text-decoration: none;
-    border-radius: 3px 3px 0 0;
 }
 
 nav ul a:hover {
@@ -94,35 +63,71 @@ nav ul a:hover {
     color: var(--secondary-color)
 }
 
-main {
-    width: 1080px;
-    margin: 0 auto;
+h1 {
+    color: var(--accent1-color);
+    margin: 10px 80px 10px 10px;
 }
+
+.searchbar {
+    display: grid;
+    grid-template-columns: 205px 1fr;
+    margin: 10px;
+}
+
+input {
+    background-color: var(--accent3-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 2px;
+}
+
+.material-icons {
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+}
+
+button {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px 5px 10px 5px;
+}
+
+/* Main Styles */
+
+main {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+/* Homepage Styles */
 
 .home {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px 10px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .hero {
-    max-width: 100%;
     grid-column: 1/-1;
+    max-width: 100%;
 }
 
 .home section {
-    border: 5px solid var(--accent1-color);
     background-color: var(--accent1-color);
+    border: 5px solid var(--accent1-color);
     color: var(--accent3-color);
-    grid-column: 1/-1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
     grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .self {
-    max-width: 350px;
     grid-column: 1/2;
+    max-width: 350px;
 }
 
 .about {
@@ -130,7 +135,40 @@ main {
 }
 
 .about h2 {
-    margin: 30px auto 10px auto;
+    margin: 30px auto 10px;
+}
+
+.product {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 5px 5px 5px #794416;
+    color: var(--accent3-color);
+    max-width: 350px;
+    text-decoration: none;
+    transition: transform .2s;
+}
+
+.product:hover {
+    box-shadow: none;
+    transform: scale(1.08);
+}
+
+.product p {
+    margin: 15px;
+    text-align: center;
+}
+
+.home>h2 {
+    color: var(--secondary-color);
+    grid-column: 1/-1;
+    height: 30px;
+}
+
+.more {
+    color: var(--secondary-color);
+    display: block;
+    grid-column: 3/-1;
+    text-align: right;text-decoration: none;
 }
 
 .questions h2 {
@@ -138,8 +176,8 @@ main {
 }
 
 .questions {
-    grid-column: 1/-1;
     background-color: var(--primary-color);
+    grid-column: 1/-1;
     padding: 20px;
 }
 
@@ -153,52 +191,20 @@ main {
 }
 
 .wiggle {
-    text-decoration: none;
+    animation: wiggle 2.5s infinite;
     color: var(--accent3-color);
     display: block;
-    text-align: center;
     margin-top: 30px;
-    animation: wiggle 2.5s infinite;
+    text-align: center;
+    text-decoration: none;
 }
 
 .wiggle:hover {
-    color: var(--accent1-color);
     animation: none;
+    color: var(--accent1-color);
 }
 
-.product {
-    max-width: 350px;
-    box-shadow: 5px 5px 5px #794416;
-    transition: transform .2s;
-    background-color: var(--secondary-color);
-    color: var(--accent3-color);
-    border: 1px solid var(--secondary-color);
-    text-decoration: none;
-}
-
-.product:hover {
-    transform: scale(1.08);
-    box-shadow: none;
-}
-
-.product p {
-    margin: 15px;
-    text-align: center;
-}
-
-.home>h2 {
-    grid-column: 1/-1;
-    color: var(--secondary-color);
-    height: 30px;
-}
-
-.more {
-    text-decoration: none;
-    color: var(--secondary-color);
-    grid-column: 3/-1;
-    display: block;
-    text-align: right;
-}
+/* Patterns Page Styles */
 
 .patternlist {
     margin-bottom: 50px;
@@ -206,6 +212,12 @@ main {
 
 .patternlist h2 {
     margin: 40px;
+}
+
+.pattern {
+    height: auto;
+    overflow: auto;
+    padding: 10px;
 }
 
 .pattern:nth-of-type(odd) {
@@ -217,17 +229,11 @@ main {
     background-color: var(--accent2-color);
 }
 
-.pattern {
-    padding: 10px;
-    height: auto;
-    overflow: auto;
-}
-
 .pattern img {
-    max-width: 325px;
     float: left;
     height: auto;
     margin-right: 10px;
+    max-width: 325px;
 }
 
 .pattern h3 {
@@ -237,6 +243,8 @@ main {
 .pattern p {
     line-height: 130%;
 }
+
+/* Shop Page Styles */
 
 .shopmain {
     display: grid;
@@ -248,8 +256,8 @@ main {
 .shopsearch {
     grid-column: 1/-1;
     grid-row: 1/2;
-    width: 800px;
     margin: 40px auto;
+    width: 800px;
 }
 
 .shopsearch input {
@@ -257,35 +265,38 @@ main {
 }
 
 .narrow {
-    grid-column: 1/2;
-    grid-row: 2/-2;
     border: 2px solid var(--secondary-color);
     border-right: none;
+    grid-column: 1/2;
+    grid-row: 2/-2;
+}
+
+.narrowform {
+    margin: 0 38px;
+}
+
+.narrowform input {
+    margin-bottom: 15px;
 }
 
 .productbox {
-    grid-column: 2/-1;
-    grid-row: 2/-1;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
     border: 2px solid var(--secondary-color);
+    display: grid;
+    grid-column: 2/-1;
+    grid-gap: 10px;
+    grid-row: 2/-1;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 5px 0;
 }
 
 .productresults {
-    width: 200px;
+    background-color: var(--accent3-color);
     border: 1px solid var(--accent1-color);
+    box-shadow: 3px 3px 5px var(--accent1-color);
     justify-self: center;
     margin-top: 20px;
-    background-color: var(--accent3-color);
-    box-shadow: 3px 3px 5px var(--accent1-color);
     transition: scale;
-}
-
-.productresults:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+    width: 200px;
 }
 
 .productresults img {
@@ -293,23 +304,23 @@ main {
 }
 
 .productresults p {
-    text-align: center;
     margin: 5px;
+    text-align: center;
 }
 
-.narrowform {
-    margin: 0 38px;
-}
-.narrowform input {
-    margin-bottom: 15px;
+.productresults:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .customizelink {
     border-left: 2px solid var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
-    overflow: hidden;
     height: 300px;
+    overflow: hidden;
 }
+
+/* Contact Page Styles */
 
 .moreinfo {
     margin: 30px auto;
@@ -321,8 +332,8 @@ main {
 }
 
 #sendmessage {
+    margin: 50px auto 60px;
     width: 50%;
-    margin: 50px auto 60px auto;
 }
 
 #sendmessage fieldset {
@@ -349,21 +360,23 @@ main {
 }
 
 .form li input {
-    width: 200px;
-    margin: 10px;
     color: var(--accent1-color);
+    margin: 10px;
+    width: 200px;
 }
 
 textarea {
-    margin: 10px;
     background-color: var(--accent3-color);
     border-color: var(--secondary-color);
+    margin: 10px;
 }
 
 .submit {
     grid-column: 2/-1;
     width: 200px;
 }
+
+/* Footer Styles */
 
 footer {
     background-color: var(--accent1-color);
