@@ -33,7 +33,7 @@ header {
 
 h1 {
     color: var(--accent1-color);
-    margin: 10px;
+    margin: 10px 80px 10px 10px;
 }
 
 .searchbar {
@@ -204,7 +204,7 @@ main {
 }
 
 .patternlist h2 {
-    margin: 50px;
+    margin: 40px;
 }
 
 .pattern:nth-of-type(odd) {
