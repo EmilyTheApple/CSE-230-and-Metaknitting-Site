@@ -67,3 +67,34 @@ a:hover {
     max-width: 900px;
     display: inline;
 }
+
+.final {
+    animation: colorchange 5s infinite alternate;
+}
+
+@keyframes colorchange {
+    0% {
+        color: black;
+    }
+    14% {
+        color: red;
+    }
+    28% {
+        color: orange;
+    }
+    42% {
+        color: yellow;
+    }
+    56% {
+        color: green;
+    }
+    70% {
+        color: blue;
+    }
+    84% {
+        color: indigo;
+    }
+    100% {
+        color: violet;
+    }
+}
