@@ -189,6 +189,7 @@ main {
 .home>h2 {
     grid-column: 1/-1;
     color: var(--secondary-color);
+    height: 30px;
 }
 
 .more {
